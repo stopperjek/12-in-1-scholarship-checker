@@ -1,35 +1,117 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AfripathwayJapa - 12-in-1 MEGA Checker - JAMB to Abroad 2026</title><style>body{font-family:Arial;max-width:800px;margin:0 auto;padding:15px;background:#f0f8ff}h1{color:#0a4a8a;text-align:center;background:white;padding:15px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,.1)}h1 span{color:#ff6600}.card{background:white;padding:20px;border-radius:15px;margin:15px 0;box-shadow:0 3px 10px rgba(0,0,0,.1)}.btn{width:100%;padding:14px;background:#0a4a8a;color:white;border:none;border-radius:10px;font-weight:bold;font-size:16px;cursor:pointer;margin-top:10px}.btn:hover{background:#ff6600}input,select{width:100%;padding:12px;margin:8px 0;border:2px solid #ddd;border-radius:8px;box-sizing:border-box}.result{margin-top:15px;padding:15px;border-radius:10px;display:none}.success{background:#d4edda;color:#155724;border:1px solid #c3e6cb}.info{background:#fff3cd;color:#856404}.contact{background:#0a4a8a;color:white;text-align:center;padding:20px;border-radius:15px;margin-top:20px}.contact a{color:#ffcc00;text-decoration:none;font-weight:bold}</style></head><body>
-<h1>🌍 <span>AfripathwayJapa</span><br>12-in-1 MEGA Checker</h1>
-<p style="text-align:center;background:white;padding:10px;border-radius:10px"><b>From JAMB to Abroad 2026 - All in One Place | Lagos, Nigeria</b><br>Check 12 Scholarships with One Form</p>
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AfripathwayJapa 12-in-1 Smart JAMB & Scholarship Checker 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
+body{background:#f1f5f9;color:#0f172a;padding:10px;line-height:1.5}
+.card{background:#fff;border-radius:16px;padding:16px;margin:10px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.header{background:linear-gradient(135deg,#0f4c81,#0ea5e9);color:#fff;text-align:center}
+.ad{border:1.5px dashed #94a3b8;border-radius:10px;padding:10px;text-align:center;color:#64748b;font-size:12px;background:#f8fafc;margin:10px 0}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.tabs button{flex:1 1 90px;padding:10px;border-radius:10px;border:2px solid #0f4c81;background:#fff;color:#0f4c81;font-weight:700;font-size:13px;cursor:pointer}
+.tabs button.active{background:#0f4c81;color:#fff}
+label{font-weight:600;font-size:13px;margin:10px 0 5px;display:block}
+input,select{width:100%;padding:12px;border-radius:10px;border:1.5px solid #cbd5e1;background:#f8fafc;font-size:14px}
+.btn{width:100%;padding:14px;border-radius:12px;border:none;background:#0f4c81;color:#fff;font-weight:800;font-size:15px;margin-top:12px;cursor:pointer}
+.btn-green{background:#16a34a}
+.badge{display:inline-block;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;margin:3px}
+.bg-green{background:#dcfce7;color:#166534} .bg-red{background:#fee2e2;color:#991b1b} .bg-blue{background:#dbeafe;color:#1e40af} .bg-orange{background:#ffedd5;color:#9a3412}
+.sch{border:1.5px solid #e2e8f0;border-radius:12px;padding:11px;margin:8px 0;background:#f8fafc}
+.sch.best{border-color:#16a34a;background:#f0fdf4}
+.footer{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;text-align:center}
+.footer a{color:#7dd3fc;text-decoration:none} .wa{display:inline-block;background:#25D366;color:#fff!important;padding:11px 18px;border-radius:30px;font-weight:700;margin:6px;text-decoration:none}
+.small{font-size:11px;opacity:.7}
+</style>
+</head>
+<body>
+<div class="card header">
+<h1>AfripathwayJapa</h1>
+<h2>12-in-1 Smart JAMB + Scholarship Checker 2026</h2>
+<p style="font-size:13px">High JAMB? Low JAMB? University Student? Everybody fit check | Lagos, Nigeria</p>
+</div>
+<div class="ad">AD SLOT 1 - Top (Paste AdSense here)</div>
 <div class="card">
-<label>Full Name</label><input id="name" placeholder="Your full name">
-<label>JAMB Score (0-400)</label><input id="jamb" type="number" placeholder="e.g. 280">
-<label>O'Level - 5 Credits including English & Maths?</label><select id="olevel"><option value="">Select</option><option value="yes">Yes - I have 5 credits</option><option value="no">No - Not yet</option></select>
-<label>Preferred Abroad Country</label><select id="country"><option value="">Select country</option><option value="UK">UK</option><option value="Canada">Canada</option><option value="USA">USA</option><option value="Germany">Germany</option></select>
-<button class="btn" onclick="check()">CHECK MY 12 SCHOLARSHIPS NOW 🚀</button>
-<div id="res" class="result"></div>
+<div class="tabs">
+<button id="t1" class="active" onclick="tab('jamb')">JAMB Checker</button>
+<button id="t2" onclick="tab('uni')">University Student</button>
+<button id="t3" onclick="tab('tools')">Free Tools</button>
 </div>
-
-<div class="card"><h3>✅ 12 Scholarships We Check:</h3><p>1. PTDF 2. NDDC 3. Agbami 4. TotalEnergies 5. MTN 6. Commonwealth 7. Chevening 8. DAAD Germany 9. Mastercard 10. Erasmus 11. NLNG 12. SEPLAT</p></div>
-
-<div class="contact">
-<h3>📞 Need Help? Contact AfripathwayJapa (Lagos)</h3>
-<p>WhatsApp: <a href="https://wa.me/2348149626637">08149626637</a></p>
-<p>Email: <a href="mailto:afripathway26@gmail.com">afripathway26@gmail.com</a></p>
-<p>Location: Lagos, Nigeria - Serving All States</p>
-<p style="margin-top:15px;font-size:12px">© 2026 AfripathwayJapa - Your Japa Pathway</p>
+<div id="jambTab">
+<label>Full Name</label><input id="name" placeholder="Your name">
+<label>JAMB Score (0-400)</label><input id="score" type="number" min="0" max="400" placeholder="e.g 195">
+<label>O'Level - 5 Credits incl English & Maths?</label><select id="olevel"><option value="">Select</option><option>Yes - 5 Credits</option><option>No - Less than 5</option><option>Awaiting Result</option></select>
+<label>Course you want?</label><input id="course" placeholder="e.g Medicine, Computer Science">
+<button class="btn" onclick="checkJAMB()">CHECK MY 12 OPTIONS 🚀</button>
 </div>
-
+<div id="uniTab" style="display:none">
+<label>Full Name</label><input id="uName" placeholder="Your name">
+<label>Current Level</label><select id="uLevel"><option value="">Select</option><option>100 Level</option><option>200 Level</option><option>300 Level</option><option>400 Level</option><option>500 Level</option><option>Graduate</option></select>
+<label>CGPA / Grade</label><input id="cgpa" placeholder="e.g 3.4 / 2nd Class Upper">
+<label>Department</label><input id="dept" placeholder="e.g Microbiology">
+<button class="btn btn-green" onclick="checkUni()">FIND MY 12 SCHOLARSHIPS 🎓</button>
+</div>
+<div id="toolsTab" style="display:none">
+<h3>Free Tools - Traffic Magnets</h3>
+<p style="font-size:12px">1. Course Matcher - Use JAMB Checker tab<br>2. O'Level Checker: <select id="toolOlevel" onchange="oTool()"><option>Select</option><option>Maths C6 + English C6</option><option>Maths D7</option><option>All C4+</option></select><span id="oRes"></span><br>3. CGPA Converter: <input id="cgpaIn" placeholder="e.g 3.5/5" style="padding:6px"><button onclick="convertGPA()" style="padding:6px;width:100%">Convert to 4.0 GPA</button><span id="gpaRes"></span><br>4. Deadlines: Hungary Jan15, Turkey Feb20, China Mar30, Canada Aug30, Germany Oct1, Erasmus Jan10</p>
+</div>
+</div>
+<div id="result" class="card" style="display:none"></div>
+<div class="ad">AD SLOT 2 - Inside Result (High CPC AdSense)</div>
+<div class="card"><h3>12-in-1 Inside:</h3><p style="font-size:11px"><span class="badge bg-blue">Federal</span><span class="badge bg-blue">State</span><span class="badge bg-blue">Private 140+</span><span class="badge bg-green">Canada</span><span class="badge bg-green">Germany</span><span class="badge bg-green">USA WES</span><span class="badge bg-green">UK Foundation</span><span class="badge bg-orange">Hungary</span><span class="badge bg-orange">Turkey</span><span class="badge bg-orange">China CSC</span><span class="badge bg-orange">Australia</span><span class="badge bg-orange">Erasmus Europe</span></p></div>
+<div class="ad">AD SLOT 3 - Bottom Ad</div>
+<div class="card footer">
+<h3>AfripathwayJapa - Lagos, Nigeria</h3>
+<p>Blog: <a href="https://afripathwayjapa.blogspot.com" target="_blank">afripathwayjapa.blogspot.com</a></p>
+<p>X: <a href="https://x.com/afripathwayjapa" target="_blank">@afripathwayjapa</a></p>
+<p>WhatsApp: 08075467614 (New) | afripathway26@gmail.com</p>
+<a class="wa" href="https://wa.me/2348075467614?text=Hello%20AfripathwayJapa">Chat WhatsApp 💬</a>
+<a class="wa" style="background:#000" href="https://x.com/afripathwayjapa" target="_blank">Follow X 𝕏</a>
+<a class="wa" style="background:#ff5722" href="https://afripathwayjapa.blogspot.com" target="_blank">Read Blog 📝</a>
+<p class="small">Commission: WES, Duolingo, ApplyBoard - Only if you use them. Ads + Commission only, no product sales.</p>
+</div>
 <script>
-function check(){
-let n=document.getElementById('name').value;let j=parseInt(document.getElementById('jamb').value);let o=document.getElementById('olevel').value;let r=document.getElementById('res');
-if(!n||!j||!o){r.style.display='block';r.className='result info';r.innerHTML='⚠️ Please fill your name, JAMB score and Olevel';return}
-let txt='<h3>🎉 Result for '+n+'</h3>';
-if(j>=250 && o=='yes'){txt+='<p><b>🔥 YOU QUALIFY FOR 10-12 SCHOLARSHIPS!</b></p><p>✅ PTDF, NDDC, Agbami, Total, MTN, Commonwealth, Chevening, DAAD, Mastercard, Erasmus, NLNG, SEPLAT</p><p><b>Next Step:</b> Chat us on WhatsApp for full processing guide.</p>'}else if(j>=200){txt+='<p><b>✅ YOU QUALIFY FOR 7 SCHOLARSHIPS!</b></p><p>MTN, Agbami, SEPLAT, NDDC, PTDF, Erasmus, Mastercard Foundation</p><p>Improve your docs for abroad scholarships.</p>'}else{txt+='<p><b>⚠️ You qualify for 3 local scholarships now</b></p><p>We can help you boost to 12. Contact us.</p>'}
-txt+='<br><a href="https://wa.me/2348149626637?text=Hello AfripathwayJapa, I checked '+j+' in JAMB. Help me with scholarships" style="display:block;background:#25D366;color:white;padding:12px;text-align:center;border-radius:8px;text-decoration:none;font-weight:bold">Chat AfripathwayJapa on WhatsApp - 08149626637</a>';
-r.style.display='block';r.className='result success';r.innerHTML=txt;
+function tab(n){
+document.getElementById('jambTab').style.display=n==='jamb'?'block':'none';
+document.getElementById('uniTab').style.display=n==='uni'?'block':'none';
+document.getElementById('toolsTab').style.display=n==='tools'?'block':'none';
+document.getElementById('t1').classList.toggle('active',n==='jamb');
+document.getElementById('t2').classList.toggle('active',n==='uni');
+document.getElementById('t3').classList.toggle('active',n==='tools');
+}
+function oTool(){
+let v=document.getElementById('toolOlevel').value,r=document.getElementById('oRes');
+if(v.includes('D7')) r.innerHTML='<span style="color:red"> D7=No Medicine/Law, but Private Uni + Abroad still open</span>';
+else if(v.includes('C6')) r.innerHTML='<span style="color:green"> C6=Credit! You qualify</span>';
+else r.innerHTML=' C4+ = Qualify for everything';
+}
+function convertGPA(){
+let c=document.getElementById('cgpaIn').value,num=parseFloat(c),out=document.getElementById('gpaRes');
+if(!num){out.innerHTML='Enter CGPA';return}
+let gpa=(num/5*4).toFixed(2);out.innerHTML=` ${c} = ~${gpa}/4.0 GPA`;
+}
+function checkJAMB(){
+let name=document.getElementById('name').value||'Student',score=parseInt(document.getElementById('score').value),course=document.getElementById('course').value||'your course',olevel=document.getElementById('olevel').value||'';
+if(isNaN(score)){alert('Enter JAMB score');return}
+let res=document.getElementById('result');res.style.display='block';
+let html=`<h2>Hello ${name} - 12-in-1 Result</h2><p>JAMB: <b>${score}/400</b> | ${course} | ${olevel}</p>`;
+let eligible=[];if(score>=200)eligible.push('Federal 200+');if(score>=180)eligible.push('State 180+');if(score>=140)eligible.push('Private 140+');
+html+=`<div>✅ Eligible: ${eligible.length?eligible.map(e=>`<span class="badge bg-green">${e}</span>`).join(''):'<span class="badge bg-red">No Nigeria school - Abroad open!</span>'}</div>`;
+html+=`<h3 style="margin-top:10px">🎯 12 Scholarships - Everybody fit try</h3>`;
+[
+{name:'Canada (ApplyBoard Commission)',best:score<200},{name:'Germany Free Tuition',best:score<180},{name:'USA WES Pathway',best:score>=160&&score<220},{name:'UK Foundation (Duolingo)',best:score<180},{name:'Hungary Stipendium Fully Funded',best:true},{name:'Turkey Burslari Fully Funded',best:true},{name:'China CSC Fully Funded',best:score>=160},{name:'Australia Awards',best:score>=220},{name:'Erasmus Europe',best:score>=200}
+].forEach(s=>{html+=`<div class="sch ${s.best?'best':''}"><b>${s.best?'🔥 BEST FIT: ':''}${s.name}</b> - Open for ${course} - <span class="badge ${s.best?'bg-green':'bg-blue'}">${s.best?'Recommended':'You Fit Try'}</span></div>`});
+html+=`<a class="wa" href="https://wa.me/2348075467614?text=Scored%20${score}%20Name%20${name}%20Course%20${course}">Chat 08075467614 💬</a>`;
+res.innerHTML=html;res.scrollIntoView({behavior:'smooth'});
+}
+function checkUni(){
+let name=document.getElementById('uName').value||'Student',level=document.getElementById('uLevel').value||'Student',cgpa=document.getElementById('cgpa').value||'',dept=document.getElementById('dept').value||'dept';
+let res=document.getElementById('result');res.style.display='block';
+res.innerHTML=`<h2>${name} - ${level} ${dept} CGPA ${cgpa}</h2><div class="sch best">Germany Free Tuition - Transfer</div><div class="sch best">Canada Transfer - ApplyBoard</div><div class="sch best">Hungary/Turkey/China Fully Funded</div><div class="sch">USA WES + UK + Australia + Erasmus</div><a class="wa" href="https://wa.me/2348075467614?text=${level}%20${dept}%20${cgpa}">Chat 08075467614 💬</a>`;
+res.scrollIntoView({behavior:'smooth'});
 }
 </script>
-</body></html>
+</body>
+</html>
